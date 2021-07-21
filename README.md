@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/andysmithdev/tip-calculator-app-main](https://https://github.com/andysmithdev/tip-calculator-app-main)
+- Solution URL: [https://github.com/andysmithdev/tip-calculator-app-main](https://github.com/andysmithdev/tip-calculator-app-main)
 - Live Site URL: [https://andysmithdev.github.io/tip-calculator-app-main/](https://andysmithdev.github.io/tip-calculator-app-main/)
 
 ## My process
