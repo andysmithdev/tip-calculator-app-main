@@ -4,41 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <script src="tips.js"></script>
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+  <p>S P L I</p>
+  <p>T T E R</p>
+</header>
+<main>
+  <div class="flex-container">
+    <div class="flex-form">
+<form class="splitterform">
 
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <label>Bill</label>
+  <div class="input-wrapper">
+    <span>$</span>
+    <input class="valid" id="amount" type="number" />
   </div>
+  
+    <label>Select Tip %</label>
+    <div class="radio-button-group">
+      <label class="radio-button-label">
+        <input type="radio" name="tip" value="5" />
+        <span class="radio-button">5%</span>
+      </label>
+      <label class="radio-button-label">
+        <input type="radio" name="tip" value="10" />
+        <span class="radio-button">10%</span>
+      </label>
+      <label class="radio-button-label">
+        <input type="radio" name="tip" value="15" />
+        <span class="radio-button">15%</span>
+      </label>
+      <label class="radio-button-label">
+        <input type="radio" name="tip" value="25" />
+        <span class="radio-button">25%</span>
+      </label>
+      <label class="radio-button-label">
+        <input type="radio" name="tip" value="50" />
+        <span class="radio-button">50%</span>
+      </label>
+      <label class="radio-button-label" for="custom">
+        <input type="radio" name="tip" id="custom-radio" value="custom" />
+        <input id="custom" type="number" placeholder="Custom" />
+      </label>
+    </div>
+
+  <label>Number of People</label>
+  <span id='people-error'>Can't be zero</span>
+  <div class="input-wrapper">
+    <i class="fa fa-user"></i>
+    <input class="valid" id="people" type="number" />
+  </div>
+
+</form>
+    </div>
+
+<div class="flex-result-box">
+  <div class="result-label">
+    Tip Amount
+  </div>
+  <div class="result-value" id="result-tip"></div>
+  <div class="result-unit">
+    / person
+  </div>
+  <div class="result-label">
+    Total
+  </div>
+  <div class="result-value" id="result-total"></div>
+  <div class="result-unit">
+    / person
+  </div>
+
+  <button id="reset-button">RESET</button>
+
+</div>
+
+  </div>
+</main>
 </body>
 </html>
